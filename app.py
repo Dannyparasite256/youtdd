@@ -2,7 +2,7 @@ import streamlit as st
 from pytube import YouTube
 
 def main():
-    st.title("YouTube Video Downloader")
+    st.title("Kakeeto's Youtube downloader")
 
     # Custom text input field with text color changed to red
     st.markdown(
