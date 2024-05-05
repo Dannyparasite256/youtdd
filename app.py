@@ -7,7 +7,7 @@ def main():
     # Custom text input field with text color changed to red
     st.markdown(
         """<style>
-            div.stTextInput>div>div>input { color: black }
+            div.stTextInput>div>div>input { color: white }
         </style>
         """, unsafe_allow_html=True
     )
