@@ -25,7 +25,7 @@ def main():
             available_streams = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc()
             stream_quality = st.selectbox("Select Video Quality", available_streams.all())
             if stream_quality:
-                st.write("Download:")
+                st.write("Tap the blue icon below to download the video:")
                 st.markdown(f"[Download Video ({stream_quality.resolution})]({stream_quality.url})")
         except Exception as e:
             st.error(f"Error: {str(e)}")
